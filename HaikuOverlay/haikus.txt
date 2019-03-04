@@ -1,0 +1,4 @@
+1, "do caterpillars" "think butterflies beautiful?" "find your own cocoon";
+2, "in a new bucket" "the same water..." "looks so fresh!";
+3, "Flowers bloom and die" "Wind brings butterflies or snow" "A stone won't notice";
+4, "even wild roses" "of a downtrodden land" "reach enlightenment";
