@@ -3,12 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 0,
+			"minor" : 1,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 34.0, 79.0, 868.0, 714.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -36,7 +37,20 @@
 		"tags" : "",
 		"style" : "Max For Live",
 		"subpatcher_template" : "Max For Live",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 739.0, 610.0, 56.0, 22.0 ],
+					"text" : "deferlow"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
@@ -44,8 +58,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 640.0, 690.0, 56.0, 22.0 ],
-					"presentation_rect" : [ 640.0, 690.0, 56.0, 22.0 ],
-					"style" : "",
 					"text" : "deferlow"
 				}
 
@@ -60,9 +72,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 200.0, 26.0, 284.0, 20.0 ],
-					"presentation_rect" : [ 200.0, 26.0, 284.0, 20.0 ],
 					"prototypename" : "M4L.patcher-summary",
-					"style" : "",
 					"text" : "A utility used by the BrowseRouting abstraction"
 				}
 
@@ -77,9 +87,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 50.0, 20.0, 144.0, 27.0 ],
-					"presentation_rect" : [ 50.0, 20.0, 144.0, 27.0 ],
 					"prototypename" : "M4L.subpatcher-title",
-					"style" : "",
 					"text" : "RoutingObjects"
 				}
 
@@ -93,8 +101,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 50.0, 50.0, 560.0, 47.0 ],
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 50.0, 50.0, 560.0, 47.0 ],
-					"style" : "",
 					"text" : "The BrowseRouting abstraction is a utility that lists available tracks in the current Live set to send audio to or receive audio from, to be used inside a multichannel Max For Live device. The RoutingObjects abstraction is the mechanism used to list and map available audio inputs and outputs."
 				}
 
@@ -109,8 +115,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 490.0, 540.0, 80.0, 35.0 ],
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 490.0, 540.0, 80.0, 35.0 ],
-					"style" : "",
 					"text" : "clearchecks, checkitem $1"
 				}
 
@@ -125,8 +129,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 230.0, 540.0, 80.0, 49.0 ],
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 230.0, 540.0, 80.0, 49.0 ],
-					"style" : "",
 					"text" : "$1, clearchecks, checkitem $1"
 				}
 
@@ -138,8 +140,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 330.0, 640.0, 49.0, 20.0 ],
-					"presentation_rect" : [ 330.0, 640.0, 49.0, 20.0 ],
-					"style" : "",
 					"text" : "Umenu"
 				}
 
@@ -151,8 +151,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 745.0, 115.0, 22.0, 20.0 ],
-					"presentation_rect" : [ 745.0, 115.0, 22.0, 20.0 ],
-					"style" : "",
 					"text" : "id"
 				}
 
@@ -164,8 +162,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 575.0, 335.0, 88.0, 20.0 ],
-					"presentation_rect" : [ 575.0, 335.0, 88.0, 20.0 ],
-					"style" : "",
 					"text" : "Index (umenu)"
 				}
 
@@ -178,8 +174,6 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "", "bang" ],
 					"patching_rect" : [ 230.0, 220.0, 79.0, 22.0 ],
-					"presentation_rect" : [ 230.0, 220.0, 79.0, 22.0 ],
-					"style" : "",
 					"text" : "t b l b"
 				}
 
@@ -192,8 +186,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 40.0, 330.0, 65.0, 22.0 ],
-					"presentation_rect" : [ 40.0, 330.0, 65.0, 22.0 ],
-					"style" : "",
 					"text" : "symbol $1"
 				}
 
@@ -208,8 +200,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 230.0, 510.0, 29.5, 22.0 ],
-					"presentation_rect" : [ 230.0, 510.0, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "i"
 				}
 
@@ -217,15 +207,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-8",
-					"items" : "<empty>",
+					"items" : [ 4, ",", 5, ",", 6, ",", 7, ",", 3, ",", 8, ",", 9, ",", 10, ",", 11, ",", 12 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 40.0, 440.0, 100.0, 22.0 ],
-					"presentation_rect" : [ 40.0, 440.0, 100.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 40.0, 440.0, 100.0, 22.0 ]
 				}
 
 			}
@@ -239,8 +227,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 330.0, 270.0, 119.0, 22.0 ],
-					"presentation_rect" : [ 330.0, 270.0, 119.0, 22.0 ],
-					"style" : "",
 					"text" : "routepass dictionary"
 				}
 
@@ -255,8 +241,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 40.0, 300.0, 123.0, 22.0 ],
-					"presentation_rect" : [ 40.0, 300.0, 123.0, 22.0 ],
-					"style" : "",
 					"text" : "dict.unpack identifier:"
 				}
 
@@ -270,9 +254,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 600.0, 360.0, 30.0, 30.0 ],
-					"presentation_rect" : [ 600.0, 360.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 600.0, 360.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -284,9 +266,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 290.0, 630.0, 30.0, 30.0 ],
-					"presentation_rect" : [ 290.0, 630.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 290.0, 630.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -299,9 +279,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 740.0, 140.0, 30.0, 30.0 ],
-					"presentation_rect" : [ 740.0, 140.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 740.0, 140.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -315,8 +293,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 40.0, 270.0, 161.0, 22.0 ],
-					"presentation_rect" : [ 40.0, 270.0, 161.0, 22.0 ],
-					"style" : "",
 					"text" : "dict.unpack #2:"
 				}
 
@@ -332,12 +308,10 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 40.0, 190.0, 165.0, 22.0 ],
-					"presentation_rect" : [ 40.0, 190.0, 165.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"_persistence" : 1
 					}
 ,
-					"style" : "",
 					"text" : "live.observer #2"
 				}
 
@@ -352,8 +326,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 640.0, 652.0, 161.0, 22.0 ],
-					"presentation_rect" : [ 640.0, 652.0, 161.0, 22.0 ],
-					"style" : "",
 					"text" : "prepend set #2"
 				}
 
@@ -369,12 +341,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 640.0, 720.0, 119.0, 22.0 ],
-					"presentation_rect" : [ 640.0, 720.0, 119.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"_persistence" : 1
 					}
 ,
-					"style" : "",
 					"text" : "live.object"
 				}
 
@@ -389,8 +359,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 640.0, 582.0, 30.0, 22.0 ],
-					"presentation_rect" : [ 640.0, 582.0, 30.0, 22.0 ],
-					"style" : "",
 					"text" : "t b l"
 				}
 
@@ -405,13 +373,12 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
 					"patching_rect" : [ 640.0, 622.0, 50.5, 22.0 ],
-					"presentation_rect" : [ 640.0, 622.0, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
-						"parameter_enable" : 0
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
 					}
 ,
-					"style" : "",
 					"text" : "dict"
 				}
 
@@ -426,8 +393,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 640.0, 552.0, 92.0, 22.0 ],
-					"presentation_rect" : [ 640.0, 552.0, 92.0, 22.0 ],
-					"style" : "",
 					"text" : "set identifier $1"
 				}
 
@@ -442,8 +407,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 640.0, 522.0, 73.0, 22.0 ],
-					"presentation_rect" : [ 640.0, 522.0, 73.0, 22.0 ],
-					"style" : "",
 					"text" : "fromsymbol"
 				}
 
@@ -458,8 +421,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 430.0, 370.0, 98.0, 22.0 ],
-					"presentation_rect" : [ 430.0, 370.0, 98.0, 22.0 ],
-					"style" : "",
 					"text" : "prepend append"
 				}
 
@@ -474,8 +435,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 330.0, 540.0, 98.0, 22.0 ],
-					"presentation_rect" : [ 330.0, 540.0, 98.0, 22.0 ],
-					"style" : "",
 					"text" : "prepend append"
 				}
 
@@ -490,8 +449,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 430.0, 340.0, 123.0, 22.0 ],
-					"presentation_rect" : [ 430.0, 340.0, 123.0, 22.0 ],
-					"style" : "",
 					"text" : "dict.unpack identifier:"
 				}
 
@@ -506,8 +463,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 430.0, 300.0, 27.0, 22.0 ],
-					"presentation_rect" : [ 430.0, 300.0, 27.0, 22.0 ],
-					"style" : "",
 					"text" : "iter"
 				}
 
@@ -522,8 +477,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 330.0, 240.0, 221.0, 22.0 ],
-					"presentation_rect" : [ 330.0, 240.0, 221.0, 22.0 ],
-					"style" : "",
 					"text" : "dict.unpack #1:"
 				}
 
@@ -538,8 +491,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 330.0, 510.0, 152.0, 22.0 ],
-					"presentation_rect" : [ 330.0, 510.0, 152.0, 22.0 ],
-					"style" : "",
 					"text" : "dict.unpack display_name:"
 				}
 
@@ -547,15 +498,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-13",
-					"items" : "<empty>",
+					"items" : [ 4, ",", 5, ",", 6, ",", 7, ",", 3, ",", 8, ",", 9, ",", 10, ",", 11, ",", 12 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 600.0, 440.0, 99.0, 22.0 ],
-					"presentation_rect" : [ 600.0, 440.0, 99.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 600.0, 440.0, 99.0, 22.0 ]
 				}
 
 			}
@@ -570,12 +519,10 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 230.0, 140.0, 225.0, 22.0 ],
-					"presentation_rect" : [ 230.0, 140.0, 225.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"_persistence" : 1
 					}
 ,
-					"style" : "",
 					"text" : "live.observer #1"
 				}
 
@@ -590,8 +537,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 290.0, 440.0, 37.0, 22.0 ],
-					"presentation_rect" : [ 290.0, 440.0, 37.0, 22.0 ],
-					"style" : "",
 					"text" : "clear"
 				}
 
@@ -599,7 +544,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-33", 1 ],
+					"destination" : [ "obj-26", 0 ],
 					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -734,6 +679,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 1 ],
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
